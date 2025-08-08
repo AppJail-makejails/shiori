@@ -1,0 +1,9 @@
+INCLUDE options/options.makejail
+
+ARG shiori_tag=%%TAG1%%
+ARG shiori_ajspec=gh+AppJail-makejails/shiori
+
+FROM --entrypoint "${shiori_ajspec}" shiori:${shiori_tag}
+
+SYSRC shiori_enable=YES
+SERVICE shiori start

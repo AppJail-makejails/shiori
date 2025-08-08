@@ -1,0 +1,1 @@
+OPTION volume=shiori-db mountpoint:/var/db/shiori owner:839 group:839
